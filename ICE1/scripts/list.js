@@ -29,13 +29,25 @@ groceryList.prepend(newListItem2);
 var listItems = groceryList.getElementsByTagName("li");
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 // Counter variable
+var counter = listItems.length;
 // Loop through elements
-// Change class to cool
+for (var i = 0; i < counter; i++)
+{
+    // Change class to cool
+    listItems[i].classList.add("cool");
+}
 
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
 // h2 element
 // h2 text
+var heading = document.querySelector("h2");
+
 // No. of <li> elements
+var numberOfItems = counter;
+
 // Content
+var content = "Grocery List (" + numberOfItems + " items)";
+
 // Update h2 using innerHTML (not textContent) because it contains markup
+heading.innerHTML = content;
