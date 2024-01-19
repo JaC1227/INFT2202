@@ -1,6 +1,6 @@
 let headerEl = document.getElementById("header");
 let h1 = document.getElementById("h1");
-// let homePageLink = document.getElementById("homePageLink");
+// Let homePageLink = document.getElementById("homePageLink");
 let displayEvent = document.getElementById("displayEvent");
 let loginForm = document.getElementById("login");
 
@@ -9,28 +9,28 @@ let pass = document.getElementById("pass");
 
 
 document.body.onload = function() {
-    // get url search params
+    // Get url search params
     const urlParams = new URLSearchParams(window.location.search);
 
-    // get username param
+    // Get username param
     var usernameParam = urlParams.get("username");
     if (usernameParam) {
-        // if value/parm exists update input
+        // If value/parm exists update input
         username.value = usernameParam;
     }
 }
 
 function handleFormSubmit() {
-    // always assume form is not valid from beginning
+    // Always assume form is not valid from beginning
     let isValid = false;
     
 
-    // select all elements with validation classes
+    // Select all elements with validation classes
     let hasInvalidClass = document.getElementsByClassName("is-invalid");
     let hasValidClass = document.getElementsByClassName("is-valid");
     
 
-    // remove classes for fresh validation
+    // Remove classes for fresh validation
     for (var i =0; i< hasInvalidClass.length; i++) {
         hasInvalidClass[i].classList.remove("is-invalid");
     }
@@ -54,17 +54,17 @@ function handleFormSubmit() {
         pass.classList.add("is-valid");
     }
 
-    // selecting all error element on form
+    // Selecting all error element on form
     let errorEls = loginForm.getElementsByClassName("is-invalid");
 
-    // check number of errors
+    // Check number of errors
     if (errorEls.length > 0) {
         alert("Please correct errors");
         // do not submit form
         return false;
     }
 
-    // submit form
+    // Submit form
     return true;
 }
 
@@ -80,13 +80,13 @@ function handleMouseOut() {
    h1.style.fontSize = "32px";
 }
 
-// click event
+// Click event
 headerEl.addEventListener("click", function() {
     console.log("Event: click");
     displayEvent.innerHTML = "Event: click (header)";
 });
 
-// mouseover
+// Mouseover
 headerEl.addEventListener("mouseover", handleMouseOver);
 
 // mouseout
