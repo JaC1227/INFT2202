@@ -66,3 +66,16 @@ function iterateLet()
     }
     console.log(i); // Uncaught reference error; 'let i' foes not exist outside for block
 }
+
+console.log(iterateVar());
+console.log(iterateLet());
+var myVar = 1;
+let myLet = 2;
+const myConst = 3;
+console.log(myVar, myLet, myConst);
+
+myVar = 4;
+myLet = 5;
+console.log(myVar, myLet) // 4, 5
+myConst = 6; // Creates error, code will not execute further
+console.log(myConst);

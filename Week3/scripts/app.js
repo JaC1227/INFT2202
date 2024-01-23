@@ -5,6 +5,7 @@ import { flag, touch } from "./validator";
 
 // Use halfOf function from lib.js to print half of 50
 console.log(halfOf(50));
+console.log(halfOf()); // half of 40 (default value)
 
 // Use multiply function from lib.js to muliply 2 numbers
 console.log(mulitply(1,2));
