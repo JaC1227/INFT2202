@@ -28,7 +28,26 @@ function cssSelectors()
     // Updating by ID (id="list")
     $('#list').css('font-size', '40px');
 
-    $('li:odd').css('background-color', "#fcf30040")
+    $('li:odd').css('background-color', "#fcf30040");
 }
 
-cssSelectors();
+function traversingTheDOM()
+{
+    // $('#list').prev().css('background-color', "#2a9d8f");
+    // $('#list').next().css('background-color', "#2a9d8f");
+    $('#list').prev().next().css('background-color', "#2a9d8f"); 
+
+    $('#list').find('li').css('background-color', "#2a9d8f");
+    // Traverse up one level
+    $('#list').parent('div').css('font-size','24px');
+    // Traverse all the way up, through all parents, grandparents, etc. to the body
+    $('#list').parents('body').css('font-size','24px');
+
+}
+
+function filtering()
+{
+}
+
+// cssSelectors();
+traversingTheDOM();
