@@ -47,7 +47,16 @@ function traversingTheDOM()
 
 function filtering()
 {
+    
+    $('#list').find('li').filter(':odd').css('background-color', "#2a9d8f");
+
+    // long function of the shortcut .filter(:even)
+    $('#list').find('li').filter(function (i)
+    {
+        return i % 2 === 0;
+    }).css('background-color', "red");
 }
 
 // cssSelectors();
-traversingTheDOM();
+// traversingTheDOM();
+filtering();
