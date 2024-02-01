@@ -42,11 +42,12 @@ function square(x)
 }
 
 let nums = new Array(1,33,22,5);
-let squaredNums = nums.map(function(value)
-{
-    return square(value);
-});
-console.log(`value: ${squaredNums}`);
+ // let squaredNums = nums.map(function(value)
+// {
+//     return square(value);
+// });
+// console.log(`value: ${squaredNums}`);
+
 
 // TODO: rewrite 
 // let squaredNums = nums.map(function(value)
@@ -54,3 +55,6 @@ console.log(`value: ${squaredNums}`);
 //     return square(value);
 // });
 // using arrow functions.
+
+let squaredNums = nums.map(value => square(value));
+console.log(`value: ${squaredNums}`);
