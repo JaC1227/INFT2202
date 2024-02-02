@@ -73,3 +73,8 @@ function addReplaceRemove()
 // traversingTheDOM();
 // filtering();
 addReplaceRemove();
+
+$("a").wrap("<h2></h2>");
+$("#list2 li:first").remove();
+var offsetTop = $("#list2").offset().top;
+console.log(`offsetTop=${offsetTop}`)

@@ -58,3 +58,6 @@ let nums = new Array(1,33,22,5);
 
 let squaredNums = nums.map(value => square(value));
 console.log(`value: ${squaredNums}`);
+
+$('.red-box').toggle();
+$('.red-box').toggle();
