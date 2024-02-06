@@ -12,7 +12,7 @@ url = "https://www.durhamcollege.ca";
 searchResult = url.search(urlProtocol);
 console.log(`url =${url} searchResult = ${searchResult}`)
 
-/**
+/**                                                                                                                                                                                               
  * 
  * @param {*} email 
  */
