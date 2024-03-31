@@ -1,6 +1,6 @@
 const express = require('express');
 const pug = require('pug');
-const student = require('./routes/student.route');
+const student = require('./routes/user.route');
 require('dotenv').config();
 
 // intialize method
