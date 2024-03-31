@@ -1,5 +1,12 @@
 /* custom JavaScript goes here */
 
+
+/* 
+  Jaedyn Chinn
+  100909448
+  2024/03/17*
+*/
+
 //IIFE - Immediately Invoked Function Expression
 //AKA - Anonymous Self-Executing Function
 //Closure - limits scope leak
@@ -549,3 +556,4 @@
     core.Start = Start;
 
 })(core || (core={}));
+
