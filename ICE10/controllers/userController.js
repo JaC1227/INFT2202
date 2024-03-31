@@ -1,4 +1,4 @@
-// import student model
+// import user model
 const userModel = require('../models/user');
 
 function loadUserData(req, res) {
@@ -12,7 +12,7 @@ function loadUserData(req, res) {
 }
 
 /**
- * renders student view
+ * renders user view
  * @param {*} req 
  * @param {*} res 
  */
