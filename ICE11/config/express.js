@@ -1,3 +1,4 @@
+// Creating new users using save()
 const express = require('express');
 const morgan = require('morgan');
 const compress = require('compression');
